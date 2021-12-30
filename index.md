@@ -44,6 +44,7 @@ We recommend using Jekyll with,
 ```
 - Github pages
 ```
+Github pages can create the protect the site [visibility](https://docs.github.com/en/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site) with granted user access. Besides, the Github pages provides managed cert for HTTPS connection.
 [Instructions & Reference](https://docs.github.com/en/pages).
 
 ## Docsify
