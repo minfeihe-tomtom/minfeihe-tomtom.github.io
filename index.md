@@ -1,8 +1,16 @@
-## Welcome to GitHub Pages
+## Welcome to Minfei's GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/minfeihe-tomtom/minfeihe-tomtom.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+For this page you can find some alternatives for documentation tools. 
+```
+- jekyll
+- docsify
+```
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+
+## Why
+
+We looking into documentation tools that supports markdown and proper documentation management, updates management and version controll.
 
 ### Markdown
 
@@ -28,10 +36,21 @@ Syntax highlighted code block
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/minfeihe-tomtom/minfeihe-tomtom.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Jekyll
 
-### Support or Contact
+Jekyll is a static site generator with built-in support for GitHub Pages and a simplified build process. Jekyll takes Markdown and HTML files and creates a complete static website based on your choice of layouts. Jekyll supports Markdown and Liquid, a templating language that loads dynamic content on your site. For more information, see Jekyll.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+We recommend using Jekyll with,
+```
+- Github pages
+```
+
+## Docsify
+docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an index.html and deploy it on
+```
+- Github pages
+- Containerized environment in AKS cluster, exposed via Ingress
+- Static website hosted with Azure Blob Storage
+```
+
