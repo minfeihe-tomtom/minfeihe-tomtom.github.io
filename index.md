@@ -4,9 +4,8 @@ For this page you can find some alternatives for documentation tools.
 ```
 - jekyll
 - docsify
+- Mark
 ```
-
-
 
 ## Why
 
@@ -45,12 +44,25 @@ We recommend using Jekyll with,
 ```
 - Github pages
 ```
+[Instructions & Reference](https://docs.github.com/en/pages).
 
 ## Docsify
 docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an index.html and deploy it on
 ```
 - Github pages
 - Containerized environment in AKS cluster, exposed via Ingress
-- Static website hosted with Azure Blob Storage
 ```
+[Instructions & Reference](https://docsify.js.org/#/quickstart).
 
+## Mark
+Mark reads your Markdown file, creates a Confluence page if it doesn’t, uploads attachments if any, translates Markdown into HTML, and updates the contents of the page via REST API.
+
+Mark uses an extended file format, which, still being valid markdown, contains several HTML-ish metadata headers, which can be used to locate page inside Confluence instance and update it accordingly.
+
+```
+- Confluence
+```
+[Instructions & Reference](https://samizdat.dev/use-markdown-for-confluence/).
+
+## DocZ and other similar doc site generator
+There are a list of static site generator for documentations. They are hosted in a containerised environment, exposed via Kubernetes ingress. 
