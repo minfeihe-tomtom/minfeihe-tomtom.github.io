@@ -47,6 +47,17 @@ We recommend using Jekyll with,
 Github pages can create the protect the site [visibility](https://docs.github.com/en/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site) with granted user access. Besides, the Github pages provides managed cert for HTTPS connection.
 [Instructions & Reference](https://docs.github.com/en/pages).
 
+Pros:
+- Driven by git code best practices and managed in a GitHub repo.
+- SaaS hosted on GitHub, easy to use and config.
+- Pre-defined themes.
+- Same visibility management as code repositories.
+- HTTPS protected by GitHub certificate management.
+- Markdown supported and not frontend coding.
+
+Cons:
+- None
+
 ## Docsify
 docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an index.html and deploy it on
 ```
@@ -54,6 +65,18 @@ docsify generates your documentation website on the fly. Unlike GitBook, it does
 - Containerized environment in AKS cluster, exposed via Ingress
 ```
 [Instructions & Reference](https://docsify.js.org/#/quickstart).
+
+Pros:
+- Driven by git code best practices and managed in a GitHub repo.
+- Markdown supported.
+- Flexibility to customise site design with frontend coding.
+
+Cons:
+- Hosted on Kubernetes cluster, where efforts expected from stability, observebility and computing resources.
+- CI/CD needs to be configured for deployment.
+- No Handy HTTPS, taking efforts to provision and manage TT internal certificate.
+- Visibility management.
+- Involving frontend coding.
 
 ## Mark
 Mark reads your Markdown file, creates a Confluence page if it doesn’t, uploads attachments if any, translates Markdown into HTML, and updates the contents of the page via REST API.
@@ -65,5 +88,30 @@ Mark uses an extended file format, which, still being valid markdown, contains s
 ```
 [Instructions & Reference](https://samizdat.dev/use-markdown-for-confluence/).
 
+Pros:
+- Driven by git code best practices and managed in a GitHub repo.
+- Markdown supported.
+- Post docs to confluence, where visbility management, TLS certs are already in place.
+
+Cons:
+- CI/CD needs to be configured for deployment.
+- Posting to confluence requires personal confluence token.
+- GitHub code version control doesn't align with Conluence version controll.
+
 ## DocZ and other similar doc site generator
 There are a list of static site generator for documentations. They are hosted in a containerised environment, exposed via Kubernetes ingress. 
+```
+- Github pages
+- Containerized environment in AKS cluster, exposed via Ingress
+```
+Pros:
+- Driven by git code best practices and managed in a GitHub repo.
+- Markdown supported.
+- Flexibility to customise site design with frontend coding.
+
+Cons:
+- Hosted on Kubernetes cluster, where efforts expected from stability, observebility and computing resources.
+- CI/CD needs to be configured for deployment.
+- No Handy HTTPS, taking efforts to provision and manage TT internal certificate.
+- Visibility management.
+- Involving frontend coding.
