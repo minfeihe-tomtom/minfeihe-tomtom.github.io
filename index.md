@@ -101,7 +101,6 @@ Cons:
 ## DocZ and other similar doc site generator
 There are a list of static site generator for documentations. They are hosted in a containerised environment, exposed via Kubernetes ingress. 
 ```
-- Github pages
 - Containerized environment in AKS cluster, exposed via Ingress
 ```
 Pros:
