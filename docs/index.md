@@ -1,3 +1,8 @@
+---
+title: INDEX
+layout: template
+filename: index.md
+--- 
 ## Welcome to Minfei's GitHub Pages
 
 For this page you can find some alternatives for documentation tools. 

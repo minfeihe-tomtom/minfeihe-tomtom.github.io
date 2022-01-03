@@ -1,8 +1,7 @@
 ---
-layout: page
-title: "new page"
-permalink: /test/
-theme: jekyll-theme-midnight
----
+title: INDEX
+layout: template
+filename: index.md
+--- 
 ## Test sub page
 Test a sub page
