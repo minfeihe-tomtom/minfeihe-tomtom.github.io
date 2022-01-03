@@ -64,6 +64,7 @@ Cons:
 - CI/CD needs to be configured for deployment.
 - Posting to confluence requires personal confluence token.
 - GitHub code version control doesn't align with Conluence's version.
+
 ## Docsify, DocZ and other similar doc site generator
 There are a list of static site generator for documentations. They are hosted in a containerised environment, exposed via Kubernetes ingress. For example, `Docsify` generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an index.html and deploy it on
 ```
