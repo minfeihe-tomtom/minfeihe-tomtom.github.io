@@ -1,7 +1,7 @@
 ---
-title: INDEX
+title: TEST
 layout: template
-filename: index.md
+filename: test.md
 --- 
 ## Test sub page
 Test a sub page
