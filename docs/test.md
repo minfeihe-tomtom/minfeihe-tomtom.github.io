@@ -1,7 +1,7 @@
 ---
 title: TEST
 layout: template
-filename: test.md
+filename: test
 --- 
 ## Test sub page
 Test a sub page

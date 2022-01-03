@@ -1,7 +1,7 @@
 ---
-title: INDEX
+title: TEST2
 layout: template
-filename: index.md
+filename: test2
 --- 
 ## Welcome to Minfei's GitHub Pages
 
