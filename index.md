@@ -2,9 +2,9 @@
 
 For this page you can find some alternatives for documentation tools. 
 ```
-- jekyll
-- docsify
+- GitHub Pages and Jekyll
 - Mark
+- Docsify, DocZ and other site generator
 ```
 
 ## Why
@@ -36,7 +36,7 @@ Syntax highlighted code block
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 
-## Jekyll
+## GitHub Pages and Jekyll
 
 Jekyll is a static site generator with built-in support for GitHub Pages and a simplified build process. Jekyll takes Markdown and HTML files and creates a complete static website based on your choice of layouts. Jekyll supports Markdown and Liquid, a templating language that loads dynamic content on your site. For more information, see Jekyll.
 
@@ -51,32 +51,13 @@ Pros:
 - Driven by git code best practices and managed in a GitHub repo.
 - SaaS hosted on GitHub, easy to use and config.
 - Pre-defined themes.
+- Simple integration with 404 page.
 - Same visibility management as code repositories.
 - HTTPS protected by GitHub certificate management.
 - Markdown supported and not frontend coding.
 
 Cons:
 - None
-
-## Docsify
-docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an index.html and deploy it on
-```
-- Github pages
-- Containerized environment in AKS cluster, exposed via Ingress
-```
-[Instructions & Reference](https://docsify.js.org/#/quickstart).
-
-Pros:
-- Driven by git code best practices and managed in a GitHub repo.
-- Markdown supported.
-- Flexibility to customise site design with frontend coding.
-
-Cons:
-- Hosted on Kubernetes cluster, where efforts expected from stability, observebility and computing resources.
-- CI/CD needs to be configured for deployment.
-- No Handy HTTPS, taking efforts to provision and manage TT internal certificate.
-- Visibility management.
-- Involving frontend coding.
 
 ## Mark
 Mark reads your Markdown file, creates a Confluence page if it doesn’t, uploads attachments if any, translates Markdown into HTML, and updates the contents of the page via REST API.
@@ -96,10 +77,10 @@ Pros:
 Cons:
 - CI/CD needs to be configured for deployment.
 - Posting to confluence requires personal confluence token.
-- GitHub code version control doesn't align with Conluence version controll.
+- GitHub code version control doesn't align with Conluence's version.
 
-## DocZ and other similar doc site generator
-There are a list of static site generator for documentations. They are hosted in a containerised environment, exposed via Kubernetes ingress. 
+## Docsify, DocZ and other similar doc site generator
+There are a list of static site generator for documentations. They are hosted in a containerised environment, exposed via Kubernetes ingress. For example, `Docsify` generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an index.html and deploy it on
 ```
 - Containerized environment in AKS cluster, exposed via Ingress
 ```
