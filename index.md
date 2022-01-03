@@ -47,6 +47,8 @@ We recommend using Jekyll with,
 Github pages can create the protect the site [visibility](https://docs.github.com/en/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site) with granted user access. Besides, the Github pages provides managed cert for HTTPS connection.
 [Instructions & Reference](https://docs.github.com/en/pages).
 
+We can use a centralised GitHub repo to host all Lanes@Scale documentations, in which case, we need to maintain it with an additional PR from a code PR. Alternatively, we can also host dedicated documentations in the code repo with Path `./docs/index.md`. In this case, the default URL is randomized. Here is an exmaple of ADPU-infra [doc](https://upgraded-chainsaw-a4b14c57.pages.github.io/).
+
 Pros:
 - Driven by git code best practices and managed in a GitHub repo.
 - SaaS hosted on GitHub, easy to use and config.
@@ -57,7 +59,7 @@ Pros:
 - Markdown supported and not frontend coding.
 
 Cons:
-- None
+- No priviledge to set up organizational-level custom domain.
 
 ## Mark
 Mark reads your Markdown file, creates a Confluence page if it doesn’t, uploads attachments if any, translates Markdown into HTML, and updates the contents of the page via REST API.
