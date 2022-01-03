@@ -43,7 +43,10 @@ We can use a centralised GitHub repo to host all Lanes@Scale documentations, in 
 Pros:
 - Driven by git code best practices and managed in a GitHub repo.
 - SaaS hosted on GitHub, easy to use and config.
-	@@ -57,7 +59,7 @@ Pros:
+- Pre-defined themes.
+- Simple integration with 404 page.
+- Same visibility management as code repositories, protected by GitHub SSO.
+- HTTPS protected by GitHub certificate management.
 - Markdown supported and not frontend coding.
 
 Cons:
