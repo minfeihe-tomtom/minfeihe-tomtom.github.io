@@ -63,6 +63,7 @@ Pros:
 - Driven by git code best practices and managed in a GitHub repo.
 - Markdown supported.
 - Post docs to confluence, where visbility management, TLS certs are already in place.
+
 Cons:
 - CI/CD needs to be configured for deployment.
 - Posting to confluence requires personal confluence token.
@@ -77,6 +78,7 @@ Pros:
 - Driven by git code best practices and managed in a GitHub repo.
 - Markdown supported.
 - Flexibility to customise site design with frontend coding.
+
 Cons:
 - Hosted on Kubernetes cluster, where efforts expected from stability, observebility and computing resources.
 - CI/CD needs to be configured for deployment.
