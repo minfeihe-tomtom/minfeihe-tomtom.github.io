@@ -35,10 +35,12 @@ We recommend using Jekyll with,
 ```
 - Github pages
 ```
+
 Github pages can create the protect the site [visibility](https://docs.github.com/en/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site) with granted user access. Besides, the Github pages provides managed cert for HTTPS connection.
-[Instructions & Reference](https://docs.github.com/en/pages).
 
 We can use a centralised GitHub repo to host all Lanes@Scale documentations, in which case, we need to maintain it with an additional PR from a code PR. Alternatively, we can also host dedicated documentations in the code repo with Path `./docs/index.md`. In this case, the default URL is randomized. Here is an exmaple of ADPU-infra [doc](https://upgraded-chainsaw-a4b14c57.pages.github.io/).
+
+[Instructions & Reference](https://docs.github.com/en/pages).
 
 Pros:
 - Driven by git code best practices and managed in a GitHub repo.
@@ -58,7 +60,9 @@ Mark uses an extended file format, which, still being valid markdown, contains s
 ```
 - Confluence
 ```
+
 [Instructions & Reference](https://samizdat.dev/use-markdown-for-confluence/).
+
 Pros:
 - Driven by git code best practices and managed in a GitHub repo.
 - Markdown supported.
@@ -74,6 +78,9 @@ There are a list of static site generator for documentations. They are hosted in
 ```
 - Containerized environment in AKS cluster, exposed via Ingress
 ```
+
+[Instructions & Reference](https://docsify.js.org/#/quickstart).
+
 Pros:
 - Driven by git code best practices and managed in a GitHub repo.
 - Markdown supported.
